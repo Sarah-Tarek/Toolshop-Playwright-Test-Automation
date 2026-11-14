@@ -89,11 +89,23 @@ Open the Playwright HTML report:
 npm run report
 ```
 
+Run all tests and generate an Allure report:
+
+```bash
+npm run test:allure
+```
+
 ## Test Execution Results
 
 The following screenshots demonstrate the successful execution of each test case individually, as well as the successful execution of all automated tests in parallel.
 
 ### All Test Cases Passed
+
+**Allure Report**
+
+   ![](Pass%20Images/tcs-allure.png)
+
+**HTML Report**
 
    ![](Pass%20Images/tcs.png)
 

@@ -24,7 +24,12 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    ["html", { open: "always" }]
+    ['line'],
+    ['html'],
+    ['allure-playwright', {
+      resultsDir: './allure-results',
+      cleanResults: true, // Deletes old results before each test run
+    }],
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {

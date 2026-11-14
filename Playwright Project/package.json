@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test",
-    "test:headed": "playwright test --headed",
-    "test:e2e": "playwright test -g \"TC-07\"",
-    "report": "playwright show-report"
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:e2e": "npx playwright test -g \"TC-07\"",
+    "report": "npx playwright show-report",
+    "test:allure": "powershell -NoProfile -Command \"Remove-Item -Recurse -Force ./allure-results -ErrorAction SilentlyContinue; npx playwright test; npx allure generate ./allure-results -o ./allure-report --clean; npx allure open ./allure-report\""
+
   },
   "keywords": [],
   "author": "",
