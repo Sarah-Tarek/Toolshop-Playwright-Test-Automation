@@ -140,6 +140,10 @@ class CheckoutPage {
         await expect(this.orderConfirmationMsg).toContainText(orderConfirmationMsg);
     }
 
+    async expectInvoiceNumber() {
+        await expect(this.invoiceNumber).toBeVisible();
+    }
+
 }
 
 module.exports = { CheckoutPage };

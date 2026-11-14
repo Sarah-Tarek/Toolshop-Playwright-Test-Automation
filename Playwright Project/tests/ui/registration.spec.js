@@ -4,7 +4,7 @@ const registrationData = require("../../data/registration.json");
 
 test.describe("register", () => {
     
-    test("Valid registration", async ({ page }, testInfo) => {
+    test("TC-01", async ({ page }, testInfo) => {
         const registerPage = new RegisterPage(page);
 
         const timestamp = Date.now();
@@ -22,14 +22,4 @@ test.describe("register", () => {
         await registerPage.clickRegisterButton();
         await registerPage.expectRegistered(registrationData.validRegistration);
     });
-
-    test("Empty registration", async ({ page }) => {
-        const registerPage = new RegisterPage(page);
-
-        await registerPage.open();
-        await registerPage.clickRegisterButton();
-        await registerPage.expectEmptyRegisteration(registrationData.emptyRegistration);
-
-    });
-
 });

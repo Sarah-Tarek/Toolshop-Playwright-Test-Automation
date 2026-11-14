@@ -4,6 +4,7 @@ const { LoginPage } = require("../../pages/LoginPage.js");
 const { HomePage } = require("../../pages/HomePage.js");
 const { NavBarPage } = require("../../pages/NavBarPage.js");
 const registrationData = require("../../data/registration.json");
+const loginData = require("../../data/login.json");
 const searchData = require("../../data/search.json");
 
 test.describe("search", () => {
@@ -24,6 +25,7 @@ test.describe("search", () => {
             registrationData.validRegistration, email
         );
         await registerPage.clickRegisterButton();
+        await registerPage.expectRegistered(registrationData.validRegistration);
 
         // Login
         loginPage = new LoginPage(page);
@@ -33,9 +35,10 @@ test.describe("search", () => {
             registrationData.validRegistration.password
         );
         await loginPage.clickLoginButton();
+        await loginPage.expectLoggedIn(loginData.validLogin);
     });
 
-    test("Search for Thor Hammer", async ({page}) => {
+    test("TC-03", async ({page}) => {
         const homePage = new HomePage(page);
         const navBarPage = new NavBarPage(page);
 

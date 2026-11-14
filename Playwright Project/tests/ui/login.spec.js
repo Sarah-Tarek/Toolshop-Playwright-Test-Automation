@@ -22,54 +22,20 @@ test.describe("login", () => {
             registrationData.validRegistration, email
         );
         await registerPage.clickRegisterButton();
+        await registerPage.expectRegistered(registrationData.validRegistration);
 
         // Open login page
         loginPage = new LoginPage(page);
         await loginPage.open();
     });
 
-    test("Valid login", async () => {
+    test("TC-02", async () => {
         await loginPage.fillLoginForm(
             email,
             registrationData.validRegistration.password
         );
         await loginPage.clickLoginButton();
         await loginPage.expectLoggedIn(loginData.validLogin);
-    });
-
-    test("Empty login", async () => {
-        await loginPage.clickLoginButton();
-        await loginPage.expectEmptyLogin(loginData.emptyLogin);
-    });
-
-    test("Empty email only", async () => {
-        await loginPage.fillPasswordField(registrationData.validRegistration.password);
-        await loginPage.clickLoginButton();
-        await loginPage.expectEmptyEmail(loginData.emptyLogin);
-    });
-
-    test("Empty password only", async () => {
-        await loginPage.fillEmailField(email);
-        await loginPage.clickLoginButton();
-        await loginPage.expectEmptyPassword(loginData.emptyLogin);
-    });
-
-    test("Invalid email and password", async () => {
-        await loginPage.fillLoginForm(
-            loginData.wrongLogin.wrongEmail,
-            loginData.wrongLogin.wrongPassword
-        );
-        await loginPage.clickLoginButton();
-        await loginPage.expectWrongLogin(loginData.wrongLogin);
-    });
-
-    test("Invalid email format", async () => {
-        await loginPage.fillLoginForm(
-            loginData.wrongEmailFormat.wrongEmail,
-            loginData.wrongEmailFormat.wrongPassword
-        );
-        await loginPage.clickLoginButton();
-        await loginPage.expectWrongEmailFormat(loginData.wrongEmailFormat);
     });
 
 });

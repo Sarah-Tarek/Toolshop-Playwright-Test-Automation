@@ -60,7 +60,7 @@ test.describe("checkout", () => {
 
     });
     
-    test("Checkout and Invoices", async ({page}) => {
+    test("TC-06", async ({page}) => {
         // test.slow();
 
         // Product page - Open cart
@@ -91,6 +91,7 @@ test.describe("checkout", () => {
         await checkoutPage.clickCheckoutButton4();
         await checkoutPage.expectPaymentSuccessMsg(checkoutData.page4.paymentSuccessMsg);
         await checkoutPage.clickCheckoutButton4();
+        await checkoutPage.expectInvoiceNumber();
         await checkoutPage.expectOrderConfirmation(checkoutData.page4.orderConfirmationMsg);
         const invoiceNumber = await checkoutPage.getInvoiceNumber();
 
