@@ -1,0 +1,6 @@
+{   
+    "addToCart" : {
+        "addToCartSuccessMsg" : "Product added to shopping cart.",
+        "cartBadge": "1"
+    }
+}

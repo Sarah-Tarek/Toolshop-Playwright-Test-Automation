@@ -1,0 +1,25 @@
+{   
+    "page1" : {
+        "path": "https://practicesoftwaretesting.com/checkout"
+    },
+
+    "page2" : {
+        "alreadyLoggedInMsg": "you are already logged in. You can proceed to checkout."
+    },
+
+    "page4" : {
+        "paymentMethod" : {
+            "cash": "Cash on Delivery",
+            "bank": "Bank Transfer",
+            "creditCard": "Credit Card",
+            "nowLater": "Buy Now Pay Later",
+            "gift": "Gift Card"
+        },
+        "paymentSuccessMsg" : "Payment was successful",
+        "orderConfirmationMsg" : "Thanks for your order! Your invoice number is "
+    },
+
+    "invoicesData" : {
+        "path" : "https://practicesoftwaretesting.com/account/invoices"
+    }
+}

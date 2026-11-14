@@ -1,0 +1,58 @@
+{
+    "registration": {
+        "firstName": "Sarah",
+        "lastName": "Tarek",
+        "dateOfBirth": "1990-09-09",
+        "country": "Egypt",
+        "postalCode": "12345",
+        "houseNumber": "1",
+        "street": "Teseen",
+        "city": "Cairo",
+        "state": "Cairo",
+        "phone": "01234567890",
+        "password": "Stmb#1234",
+        "path": "https://practicesoftwaretesting.com/auth/login"
+    },
+
+    "login": {
+        "path": "https://practicesoftwaretesting.com/account",
+        "title": "My account"
+    },
+
+    "search" :{
+        "product": "Thor Hammer",
+        "caption" : "Searched for: Thor Hammer",
+        "result" : " 1 product found for 'Thor Hammer' "
+    },
+
+    "cart" : {
+        "addToCartSuccessMsg" : "Product added to shopping cart.",
+        "cartBadge": "1"
+    },
+
+    "checkout" : {   
+        "page1" : {
+            "path": "https://practicesoftwaretesting.com/checkout"
+        },
+
+        "page2" : {
+            "alreadyLoggedInMsg": "you are already logged in. You can proceed to checkout."
+        },
+
+        "page4" : {
+            "paymentMethod" : {
+                "cash": "Cash on Delivery",
+                "bank": "Bank Transfer",
+                "creditCard": "Credit Card",
+                "nowLater": "Buy Now Pay Later",
+                "gift": "Gift Card"
+            },
+            "paymentSuccessMsg" : "Payment was successful",
+            "orderConfirmationMsg" : "Thanks for your order! Your invoice number is "
+        },
+
+        "invoicesData" : {
+            "path" : "https://practicesoftwaretesting.com/account/invoices"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "validLogin": {
+        "path": "https://practicesoftwaretesting.com/account",
+        "title": "My account"
+    },
+
+    "emptyLogin": {
+        "path": "https://practicesoftwaretesting.com/auth/login",
+        "emailErrorMsg": "Email is required",
+        "passwordErrorMsg": "Password is required"
+    },
+
+    "wrongLogin": {
+        "path": "https://practicesoftwaretesting.com/auth/login",
+        "wrongEmail": "wrongemail@gmail.com",
+        "wrongPassword": "Wrong#Password123",
+        "errorMessage": "Invalid email or password"
+    },
+
+    "wrongEmailFormat": {
+        "path": "https://practicesoftwaretesting.com/auth/login",
+        "wrongEmail": "123",
+        "wrongPassword": "Wrong#Password123",
+        "errorMessage": "Email format is invalid"
+    }
+}

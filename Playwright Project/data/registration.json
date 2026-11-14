@@ -1,0 +1,32 @@
+{
+    "validRegistration": {
+        "firstName": "Sarah",
+        "lastName": "Tarek",
+        "dateOfBirth": "1990-09-09",
+        "country": "Egypt",
+        "postalCode": "12345",
+        "houseNumber": "1",
+        "street": "Teseen",
+        "city": "Cairo",
+        "state": "Cairo",
+        "phone": "01234567890",
+        "password": "Stmb#1234",
+        "path": "https://practicesoftwaretesting.com/auth/login"
+    },
+
+    "emptyRegistration": {
+        "path": "https://practicesoftwaretesting.com/auth/register",
+        "firstNameErrorMsg": "First name is required",
+        "lastNameErrorMsg": "Last name is required",
+        "dobErrorMsg": "Please enter a valid date in YYYY-MM-DD format.\nDate of Birth is required",
+        "countryErrorMsg": "Country is required",
+        "postalCodeErrorMsg": "Postcode is required",
+        "houseNumberErrorMsg": "House number is required",
+        "streetErrorMsg": "Street is required",
+        "cityErrorMsg": "City is required",
+        "stateErrorMsg": "State is required",
+        "phoneErrorMsg": "Phone is required.",
+        "emailErrorMsg": "Email is required",
+        "passwordErrorMsg": "Password is required\nPassword must be minimal 6 characters long.\nPassword can not include invalid characters."
+    }
+}
