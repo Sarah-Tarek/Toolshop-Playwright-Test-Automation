@@ -103,7 +103,7 @@ The following screenshots demonstrate the successful execution of each test case
 
 **Allure Report**
 
-   ![](Pass%20Images/tcs-allure.png)
+   ![](Pass%20Images/tcs-allure.PNG)
 
 **HTML Report**
 
